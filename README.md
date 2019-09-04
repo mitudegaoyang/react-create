@@ -5,7 +5,29 @@
 ```
 npx create-react-app project-name
 cd project-name
+npm i react-app-rewired customize-cra -D
+```
 
+配置`package.json`
+
+```
+"scripts": {
+-   "start": "react-scripts start",
++   "start": "react-app-rewired start",
+-   "build": "react-scripts build",
++   "build": "react-app-rewired build",
+-   "test": "react-scripts test",
++   "test": "react-app-rewired test",
+}
+```
+
+项目根目录创建`config-overrides.js`
+
+```
+module.exports = function override(config, env) {
+  // do stuff with the webpack config...
+  return config;
+};
 ```
 
 ## 参考资料
