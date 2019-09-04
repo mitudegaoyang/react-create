@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from "react-router-dom";
+import BreadcrumbBar from "../../../components/BreadcrumbBar";
 
 class List extends React.Component {
 
@@ -9,6 +10,7 @@ class List extends React.Component {
 
     return (
       <div className="form">
+        <BreadcrumbBar></BreadcrumbBar>
         <button onClick={() => history.push("/")}>返回首页</button>
         hello ListChild
       </div>

@@ -135,7 +135,7 @@ class Form extends React.Component {
   }
 
   render() {
-    const { history } = this.props;
+    // const { history } = this.props;
     let isShow = this.props.count.message !== ''
     return (
       <div className="form">
