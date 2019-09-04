@@ -9,7 +9,7 @@ class Dashboard extends React.Component {
 
       <React.Fragment>
         <BreadcrumbBar></BreadcrumbBar>
-        <div className="form">
+        <div className="dashboard">
           <Link to="/login">Login</Link>{' '}
           <Link to="/from">From</Link>{' '}
           <Link to="/list">List</Link>{' '}
