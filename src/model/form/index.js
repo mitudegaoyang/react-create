@@ -6,6 +6,7 @@ import { withRouter } from "react-router-dom";
 import Select from '../../components/Select/';
 import Input from '../../components/Input';
 import Message from '../../components/Message';
+import BreadcrumbBar from "../../components/BreadcrumbBar";
 
 class Form extends React.Component {
 
@@ -139,6 +140,7 @@ class Form extends React.Component {
     let isShow = this.props.count.message !== ''
     return (
       <div className="form">
+        <BreadcrumbBar></BreadcrumbBar>
         <Message r-if={isShow} message={this.props.count.message}></Message>
         <div className="formItem">
           <div
